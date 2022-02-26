@@ -12,7 +12,7 @@ module.exports = [{
       options: {"plugins":[],"trackingIds":["UA-73379983-2"],"pluginConfig":{"head":true}},
     },{
       plugin: require('../node_modules/gatsby-plugin-manifest/gatsby-browser.js'),
-      options: {"plugins":[],"name":"Owen Oertell","short_name":"Owen Oertell","start_url":"/","background_color":"#FFF","theme_color":"#F7A046","display":"standalone","icon":"static/logo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"28a94a65e3b0e8bb643e36dffbfb039e"},
+      options: {"plugins":[],"name":"Owen Oertell | Blog","short_name":"Owen Oertell | Blog","start_url":"/","background_color":"#FFF","theme_color":"#F7A046","display":"standalone","icon":"static/logo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"28a94a65e3b0e8bb643e36dffbfb039e"},
     },{
       plugin: require('../node_modules/gatsby-plugin-offline/gatsby-browser.js'),
       options: {"plugins":[],"workboxConfig":{"runtimeCaching":[{"urlPattern":{},"handler":"CacheFirst"},{"urlPattern":{},"handler":"StaleWhileRevalidate"},{"urlPattern":{},"handler":"StaleWhileRevalidate"},{"urlPattern":{},"handler":"StaleWhileRevalidate"}]}},
