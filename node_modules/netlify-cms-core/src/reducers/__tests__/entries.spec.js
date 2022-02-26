@@ -1,4 +1,5 @@
 import { OrderedMap, fromJS } from 'immutable';
+
 import * as actions from '../../actions/entries';
 import reducer, {
   selectMediaFolder,
@@ -433,6 +434,22 @@ describe('entries', () => {
           undefined,
         ),
       ).toBe('../../static/media/image.png');
+    });
+
+    it('should handle absolute public_folder', () => {
+      expect(
+        selectMediaFilePublicPath(
+          { public_folder: 'https://www.netlify.com/media' },
+          fromJS({
+            name: 'posts',
+            folder: 'posts',
+            public_folder: 'https://www.netlify.com/media',
+          }),
+          'image.png',
+          undefined,
+          undefined,
+        ),
+      ).toBe('https://www.netlify.com/media/image.png');
     });
 
     it('should compile collection public folder template', () => {

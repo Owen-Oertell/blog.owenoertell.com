@@ -21,22 +21,20 @@
     padding: 0 24px;
     line-height: $button-height;
     text-align: center;
-    color: black;
-    border: 2px solid $color-primary;
+    color: $color-base;
+    border: 1px solid $color-gray-border;
     border-radius: $button-border-radius;
     font-size: $typographic-base-font-size;
-    background-color: $color-primary;
-    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-
     font-weight: normal;
     margin-left: auto;
     margin-right: auto;
     @include margin-top(1);
+    transition: all .2s ease-in-out !important;
 
     &:hover,
     &:focus {
-      color: $color-primary;
-      background-color: black;
+      color: $color-base;
+      background-color: $color-secondary;
     }
 
   }

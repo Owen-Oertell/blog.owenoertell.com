@@ -10,9 +10,9 @@ const Author = () => {
   return (
     <div className={styles['author']}>
       <p className={styles['author__bio']}>
-        I am head of engineering at <a href="https://ystemandchess.com">YSC</a> and do research at the Dickson lab at <a href="https://www.gatech.edu/">GaTech</a>.
-        Check out my <a href={getContactHref('github', author.contacts.github)}>github</a> or drop me an <a href={getContactHref('email', author.contacts.email)}>email</a>!</p>
-    </div>
+        Owen Oertell writes about computer science, mathematics, machine learning, and quantitative finance. Check out his website <a className="lnk" href="owenoertell.com">here</a>.
+      </p>
+    </div >
   );
 };
 

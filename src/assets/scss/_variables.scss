@@ -1,36 +1,17 @@
-/** 
+/**
  * Variables
  */
+@use "sass:math";
 
 // Colors
-/*
-LIGHT THEME:
-$color-base: #222;
-$color-primary: #5D93FF;
+$color-base: rgb(0, 0, 0);
+$color-primary: rgb(75, 74, 74);
 $color-secondary: #F7A046;
 
 $color-white: #FFF;
-$background-color: #FFF;
-
 $color-gray: lighten($color-base, 40%);
 $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
-*/
-// DARK THEME
-$background-color: #222831;
-
-$color-base: #ececec;
-$color-primary:#668bc2;
-$color-secondary: #f8ab58;
-
-$color-white: #222831;
-
-$color-gray: lighten($color-base, 40%);
-$color-gray-border: lighten($color-base, 77%);
-$color-gray-bg: lighten($color-base, 79%);
-
-// --------------------------------------------------------------------------------
-
 
 // Typographic
 $typographic-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -45,7 +26,7 @@ $typographic-base-font-color: $color-base;
 $typographic-link-p-font-color: $color-primary;
 $typographic-link-s-font-color: $color-secondary;
 
-$typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typographic-base-line-height);
+$typographic-leading: round(16 * math.div($typographic-root-font-size, 100) * $typographic-base-line-height);
 
 // Buttons
 $button-height: 35px;

@@ -27,17 +27,20 @@
       border-radius: 50%;
       text-align: center;
       border: 1px solid $color-gray-bg;
+      transition: all .2s ease-in-out !important;
+      &:hover,
+      &:focus {
+        color: $color-base;
+        background-color: $color-secondary;
+      }
 
       &-link {
         border: 0;
         display: flex;
         color: $color-base;
-  
-        &:hover,
-        &:focus {
-          color: $color-primary;
+        &:hover,&:focus {
+          color: $color-base;
         }
-
       }
 
     }

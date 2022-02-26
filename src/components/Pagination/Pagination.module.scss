@@ -13,6 +13,7 @@
       color: $color-secondary;
       font-size: 26px;
       font-weight: bold;
+      transition: all .2s ease-in-out !important;
 
       &:hover,
       &:focus {
@@ -36,7 +37,8 @@
       color: $color-secondary;
       font-size: 26px;
       font-weight: bold;
-
+      transition: all .2s ease-in-out !important;
+      text-decoration: none;
       &:hover,
       &:focus {
         color: $color-primary;

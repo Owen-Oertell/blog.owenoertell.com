@@ -18,13 +18,13 @@ const Author = ({ author, isIndex }: Props) => (
       <img
         src={withPrefix(author.photo)}
         className={styles['author__photo']}
-        width="110"
-        height="110"
+        width="75"
+        height="75"
         alt={author.name}
       />
     </Link>
 
-    { isIndex === true ? (
+    {isIndex === true ? (
       <h1 className={styles['author__title']}>
         <Link className={styles['author__title-link']} to="/">{author.name}</Link>
       </h1>
@@ -33,7 +33,9 @@ const Author = ({ author, isIndex }: Props) => (
         <Link className={styles['author__title-link']} to="/">{author.name}</Link>
       </h2>
     )}
-    <p className={styles['author__subtitle']}>Chamblee High School '2022<br/>Head of Engineering @ <a href="https://ystemandchess.com">YSC</a><br/>Member of Dickson Lab @ <a href="https://www.gatech.edu/">GaTech</a><br/>Co-Founder @ <a href="https://prepbyai.com/">PrepByAI</a></p>
+    <p className={styles['author__subtitle']}>{author.bio}</p>
+    <p className={styles['author__subtitle']}>Chamblee High School '2022<br />Head of Engineering @ <a className="lnk" href="https://ystemandchess.com">YSC</a><br />Member of Dickson Lab @ <a className="lnk" href="https://www.gatech.edu/">GaTech</a><br />Co-Founder @ <a className="lnk" href="https://prepbyai.com/">PrepByAI</a></p>
+
   </div>
 );
 

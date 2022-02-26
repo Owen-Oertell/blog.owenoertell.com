@@ -3,9 +3,9 @@
 module.exports = {
   url: 'https://owenoertell.net',
   pathPrefix: '/',
-  title: 'Owen Oertell',
-  subtitle: 'I write about ML, Quantiative finance, and CS!',
-  copyright: '© Owen Oertell · All rights reserved.',
+  title: 'Owen Oertell | Blog',
+  subtitle: 'Computer science, math, and quantitative finance enthusiast.',
+  copyright: '©2022 Owen Joshua Oertell',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-73379983-2',
@@ -17,23 +17,19 @@ module.exports = {
     },
     {
       label: 'About me',
-      path: '/pages/about'
-    },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      path: 'https://owenoertell.com'
     },
     {
       label: 'Posts by Tag',
       path: '/tags/'
     }
   ],
-  bio: 'I write about ML, Quantiative finance, and CS!',
   author: {
     name: 'Owen Oertell',
-    photo: '/media/owen-oertell-github-logo.png',
+    photo: '/image_round_2.png',
+    bio: 'Computer science, math, and quantitative finance enthusiast.\n\n',
     contacts: {
-      email: '',
+      email: 'owen@oertell.net',
       facebook: '',
       telegram: '',
       twitter: '',
