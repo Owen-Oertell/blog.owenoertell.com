@@ -10,7 +10,7 @@ const Author = () => {
   return (
     <div className={styles['author']}>
       <p className={styles['author__bio']}>
-        Owen Oertell writes about computer science, mathematics, machine learning, and quantitative finance. Check out his website <a className="lnk" href="owenoertell.com">here</a>.
+        Owen Oertell writes about computer science, mathematics, machine learning, and quantitative finance. Check out his website <a className="lnk" href="https://owenoertell.com">here</a>.
       </p>
     </div >
   );
